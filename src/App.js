@@ -1,25 +1,52 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { BrowserRouter, Route } from 'react-router-dom'
 import './App.css';
+import NavigationMenu from './NavigationMenu'
+import DefaultPage from './DefaultPage'
+import HealthCheckPage from './HealthCheckPage'
+
+const Header = () => (
+  <div className="main-header">
+    <div col>
+      <header>
+        <p>
+        <h1>HSBC RAGE</h1>
+        </p>
+      </header>
+    </div>
+  </div>
+)
+
+const PrimaryLayout = () => (
+  <div className="primary-layout">
+    <Header />
+      <div class="row">
+
+        <div class="col-3"><NavigationMenu /></div>
+
+        {/* <main> */}
+          <div class="col-9">
+            <Route path="/" exact component={DefaultPage} />
+            <Route path="/health" component={HealthCheckPage} />
+          </div>
+        {/* </main> */}
+      </div>
+  </div>
+)
 
 class App extends Component {
+
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <div class="containter">
+          <BrowserRouter>
+            <PrimaryLayout />
+          </BrowserRouter>
+
+        </div>
       </div>
     );
   }
