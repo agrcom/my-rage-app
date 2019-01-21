@@ -4,7 +4,7 @@ import { BrowserRouter, Route } from 'react-router-dom'
 import './App.css';
 import NavigationMenu from './NavigationMenu'
 import DefaultPage from './DefaultPage'
-import HealthCheckPage from './HealthCheckPage'
+import HealthCheckPage from './HealthCheck/HealthCheckPage'
 
 const Header = () => (
   <div className="main-header">
@@ -17,6 +17,7 @@ const Header = () => (
     </div>
   </div>
 )
+
 
 const PrimaryLayout = () => (
   <div className="primary-layout">
