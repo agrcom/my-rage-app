@@ -3,3 +3,8 @@
     background-color: #282c34;
     min-height: 100vh;
   }
+
+  .card-text {
+    text-align: center;
+    font-size: calc(6px + 2vmin);
+  }
