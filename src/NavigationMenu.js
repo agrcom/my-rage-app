@@ -9,6 +9,7 @@ render() {
           <li><Link to='/'><button type="button" 
           class="btn btn-outline-secondary btn-block pull-left">Home</button></Link></li>
           <li><Link to='/health'><button type="button" class="btn btn-outline-secondary btn-block">Health Check</button></Link></li>
+          <li><Link to='/indexRate'><button type="button" class="btn btn-outline-secondary btn-block">IndexRate</button></Link></li>
           <li><Link to='/schedule'><button type="button" class="btn btn-outline-secondary btn-block">About</button></Link></li>
         </ul>
       </nav>

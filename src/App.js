@@ -5,6 +5,7 @@ import './App.css';
 import NavigationMenu from './NavigationMenu'
 import DefaultPage from './DefaultPage'
 import HealthCheckPage from './HealthCheck/HealthCheckPage'
+import IndexRatePage from './IndexRate/IndexRatePage'
 
 const Header = () => (
   <div className="main-header">
@@ -30,6 +31,7 @@ const PrimaryLayout = () => (
           <div class="col-9">
             <Route path="/" exact component={DefaultPage} />
             <Route path="/health" component={HealthCheckPage} />
+            <Route path="/indexRate" component={IndexRatePage} />
           </div>
         {/* </main> */}
       </div>
