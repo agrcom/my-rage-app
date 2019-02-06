@@ -4,8 +4,11 @@ import './Card.css';
 class HealthCardGreen extends Component {
 
     render() {
+        let status = this.props.cardData.status === 'green' ? 'card bg-success' : 'card bg-danger'
+        const cardStatus = status + ' text-white mb-3'
+
         return (
-            <div className="card text-white bg-success mb-3" styles="max-width: 18rem;">
+            <div className={cardStatus} styles='max-width: 18rem;'>
                 <div class="card-header">{this.props.cardData.name}</div>
                 <div class="card-body">
                     <h5 class="card-title">{this.props.cardData.status}</h5>
