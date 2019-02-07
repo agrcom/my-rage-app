@@ -6,6 +6,8 @@ import NavigationMenu from './NavigationMenu'
 import DefaultPage from './DefaultPage'
 import HealthCheckPage from './HealthCheck/HealthCheckPage'
 import IndexRatePage from './IndexRate/IndexRatePage'
+import HealthDetailsPage from './HealthCheck/HealthDetailsPage';
+
 
 const Header = () => (
   <div className="main-header">

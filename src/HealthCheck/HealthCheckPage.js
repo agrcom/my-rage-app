@@ -44,6 +44,11 @@ class HealthCheckPage extends Component {
           </p>
                 <HealthCheckGrid data = {demoData}/>
 
+                {/* <Route path="/health/details" component={HealthDetailsPage} />
+                <BrowserRouter>
+            < />
+          </BrowserRouter> */}
+
             </div>
         );
     }
